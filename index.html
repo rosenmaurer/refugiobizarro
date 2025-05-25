@@ -46,91 +46,105 @@
       font-family: 'EB Garamond', serif;
       margin: 0;
       padding: 0;
-      background: #121212;
+      background: linear-gradient(135deg, #2e003e, #1b0026);
       color: #eee;
       line-height: 1.6;
     }
 
     nav {
-      background-color: #1e1e1e;
-      padding: 12px 20px;
+      background-color: #3a0070;
+      padding: 15px 30px;
       display: flex;
       justify-content: center;
-      gap: 30px;
-      font-size: 1.1em;
-      border-bottom: 1px solid #444;
+      gap: 40px;
+      font-size: 1.15em;
+      border-bottom: 2px solid #5a2ca0;
+      box-shadow: 0 2px 8px rgba(90, 44, 160, 0.5);
     }
 
     nav a {
-      color: #aaa;
+      color: #d5b1ff;
       text-decoration: none;
-      font-weight: 500;
+      font-weight: 600;
+      letter-spacing: 0.04em;
       transition: color 0.3s ease;
+      padding: 6px 12px;
+      border-radius: 8px;
     }
 
     nav a:hover {
-      color: #8e44ad;
+      color: #fff;
+      background-color: #6e3ad1;
+      box-shadow: 0 0 10px #a66aff88;
     }
 
     header {
       text-align: center;
-      margin: 40px 0 20px;
+      margin: 50px 0 30px;
+      text-shadow: 0 0 8px #a46affbb;
     }
 
     .logo-title h1 {
-      font-size: 2.8em;
-      color: #8e44ad;
-      letter-spacing: 1.5px;
+      font-size: 3.2em;
+      color: #d6b3ff;
+      letter-spacing: 2px;
       margin: 0;
-      font-weight: 600;
+      font-weight: 700;
+      text-shadow: 0 0 15px #c87effcc, 0 0 30px #8b3accbb;
     }
 
     .logo-title img {
-      width: 80px;
+      width: 90px;
       height: auto;
-      filter: none;
-      margin-bottom: 10px;
+      filter: drop-shadow(0 0 4px #b478ffcc);
+      margin-bottom: 15px;
     }
 
     .main-content {
       max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
+      margin: 40px auto 60px;
+      padding: 0 25px;
       display: flex;
-      gap: 40px;
+      gap: 45px;
     }
 
     .left-column {
       flex: 2;
-      background: #1f1f1f;
-      border-radius: 10px;
-      padding: 25px 30px;
-      box-shadow: 0 0 8px rgba(142, 68, 173, 0.3);
+      background: #280050;
+      border-radius: 14px;
+      padding: 30px 35px;
+      box-shadow: 0 0 25px #ac78ffaa;
+      border: 1.5px solid #6f46bd;
     }
 
     .info-box p {
-      color: #ddd;
-      font-size: 1.1em;
-      margin-bottom: 1.2em;
+      color: #ddccff;
+      font-size: 1.15em;
+      margin-bottom: 1.3em;
       font-style: normal;
+      line-height: 1.75;
+      text-shadow: 0 0 5px #8c56ffcc;
     }
 
     .right-column {
       flex: 1;
-      background: #1f1f1f;
-      border-radius: 10px;
-      padding: 25px 20px;
-      box-shadow: 0 0 8px rgba(142, 68, 173, 0.3);
+      background: #3a0070;
+      border-radius: 14px;
+      padding: 30px 25px;
+      box-shadow: 0 0 20px #bb88ffbb;
       display: flex;
       flex-direction: column;
       align-items: center;
+      border: 1.5px solid #7b50cf;
     }
 
     .right-column h2 {
-      color: #8e44ad;
-      margin-bottom: 20px;
-      font-weight: 600;
-      letter-spacing: 1.1px;
+      color: #d6b3ff;
+      margin-bottom: 28px;
+      font-weight: 700;
+      letter-spacing: 1.3px;
+      text-shadow: 0 0 12px #a475ffcc;
+      font-size: 1.8em;
     }
 
     .social-links {
@@ -141,38 +155,48 @@
     }
 
     .social-links li {
-      margin-bottom: 20px;
+      margin-bottom: 25px;
     }
 
     .social-links a {
       display: flex;
       align-items: center;
       text-decoration: none;
-      color: #ddd;
-      font-weight: 600;
+      color: #e6d9ff;
+      font-weight: 700;
       transition: color 0.3s ease;
-      font-size: 1.1em;
-      gap: 12px;
+      font-size: 1.15em;
+      gap: 14px;
+      border-radius: 8px;
+      padding: 8px 12px;
+      box-shadow: 0 0 12px #ac78ff77;
+      background: linear-gradient(135deg, #5f00a0, #8e44ad);
+      user-select: none;
     }
 
     .social-links a:hover {
-      color: #c39bd3;
+      color: #fff;
+      box-shadow: 0 0 20px #c49affcc;
+      background: linear-gradient(135deg, #ac78ff, #b56ee0);
     }
 
     .social-icon {
-      width: 24px;
-      height: 24px;
+      width: 26px;
+      height: 26px;
       fill: currentColor;
       flex-shrink: 0;
+      filter: drop-shadow(0 0 2px #bb99ffcc);
     }
 
     footer {
-      margin-top: 60px;
-      padding: 20px;
+      margin-top: 70px;
+      padding: 22px;
       text-align: center;
-      color: #8e44ad;
-      font-weight: 600;
-      border-top: 1px solid #444;
+      color: #cbb0ff;
+      font-weight: 700;
+      border-top: 2px solid #6f46bd;
+      text-shadow: 0 0 8px #ac78ffbb;
+      user-select: none;
     }
   </style>
 </head>
@@ -216,46 +240,46 @@
     </div>
 
     <aside class="right-column">
-      <h2>Síguenos</h2>
-      <ul class="social-links">
-        <li>
-          <a href="https://www.instagram.com/refugio.bizarro" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-            <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-              <path d="M7.75 2A5.75 5.75 0 002 7.75v8.5A5.75 5.75 0 007.75 22h8.5A5.75 5.75 0 0022 16.25v-8.5A5.75 5.75 0 0016.25 2h-8.5zM12 7.25a4.75 4.75 0 110 9.5 4.75 4.75 0 010-9.5zm5.5-1.5a1.25 1.25 0 11-2.5 0 1.25 1.25 0 012.5 0zM12 9.75a2.25 2.25 0 100 4.5 2.25 2.25 0 000-4.5z"/>
-            </svg>
-            Instagram
-          </a>
-        </li>
-        <li>
-          <a href="https://www.threads.net/@refugio.bizarro" target="_blank" rel="noopener noreferrer" aria-label="Threads">
-            <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-              <path d="M12 2C6.477 2 2 6.477 2 12c0 5.523 4.477 10 10 10s10-4.477 10-10c0-5.522-4.477-10-10-10zm.75 14.75v-3.5h1.5v3.5h-1.5zm-.75-5v-3h1.5v3h-1.5z"/>
-            </svg>
-            Threads
-          </a>
-        </li>
-        <li>
-          <a href="https://twitter.com/refugiobizarro" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-            <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-              <path d="M23 3a10.9 10.9 0 01-3.14.86 5.48 5.48 0 002.4-3.02 10.86 10.86 0 01-3.46 1.32 5.44 5.44 0 00-9.3 4.96 15.44 15.44 0 01-11.22-5.7 5.44 5.44 0 001.68 7.27 5.41 5.41 0 01-2.47-.68v.07a5.44 5.44 0 004.36 5.33 5.49 5.49 0 01-2.45.09 5.45 5.45 0 005.07 3.78 10.92 10.92 0 01-6.75 2.33c-.44 0-.88-.03-1.31-.08a15.42 15.42 0 008.36 2.45c10.03 0 15.53-8.31 15.53-15.53 0-.24-.01-.48-.02-.72A11.1 11.1 0 0023 3z"/>
-            </svg>
-            Twitter
-          </a>
-        </li>
-        <li>
-          <a href="https://bsky.app/profile/refugiobizarro.bsky.social" target="_blank" rel="noopener noreferrer" aria-label="Bluesky">
-            <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-              <path d="M12 2C6.477 2 2 6.477 2 12c0 5.523 4.477 10 10 10 5.523 0 10-4.477 10-10 0-5.523-4.477-10-10-10zm3 15.5l-3-3-3 3v-9l3 3 3-3v9z"/>
-            </svg>
-            Bluesky
-          </a>
-        </li>
-      </ul>
-    </aside>
-  </div>
+  <h2>Síguenos</h2>
+  <ul class="social-links">
+    <li>
+      <a href="https://www.instagram.com/refugio.bizarro" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+        <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M7.75 2A5.75 5.75 0 002 7.75v8.5A5.75 5.75 0 007.75 22h8.5A5.75 5.75 0 0022 16.25v-8.5A5.75 5.75 0 0016.25 2h-8.5zM12 7.25a4.75 4.75 0 110 9.5 4.75 4.75 0 010-9.5zm5.5-1.5a1.25 1.25 0 11-2.5 0 1.25 1.25 0 012.5 0zM12 9.75a2.25 2.25 0 100 4.5 2.25 2.25 0 000-4.5z"/>
+        </svg>
+        Instagram
+      </a>
+    </li>
+    <li>
+      <a href="https://www.threads.net/@refugio.bizarro" target="_blank" rel="noopener noreferrer" aria-label="Threads">
+        <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M12 2C6.477 2 2 6.477 2 12c0 5.523 4.477 10 10 10s10-4.477 10-10c0-5.522-4.477-10-10-10zm.75 14.75v-3.5h1.5v3.5h-1.5zm-.75-5v-3h1.5v3h-1.5z"/>
+        </svg>
+        Threads
+      </a>
+    </li>
+    <li>
+      <a href="https://twitter.com/refugiobizarro" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+        <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M23 3a10.9 10.9 0 01-3.14.86 5.48 5.48 0 002.4-3.02 10.86 10.86 0 01-3.46 1.32 5.44 5.44 0 00-9.3 4.96 15.44 15.44 0 01-11.22-5.7 5.44 5.44 0 001.68 7.27 5.41 5.41 0 01-2.47-.68v.07a5.44 5.44 0 004.36 5.33 5.49 5.49 0 01-2.45.09 5.45 5.45 0 005.07 3.78 10.92 10.92 0 01-6.75 2.33c-.44 0-.88-.03-1.31-.08a15.42 15.42 0 008.36 2.45c10.03 0 15.53-8.31 15.53-15.53 0-.24-.01-.48-.02-.72A11.1 11.1 0 0023 3z"/>
+        </svg>
+        Twitter
+      </a>
+    </li>
+    <li>
+      <a href="https://bsky.app/profile/refugiobizarro.bsky.social" target="_blank" rel="noopener noreferrer" aria-label="Bluesky">
+        <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M12 2C6.477 2 2 6.477 2 12c0 5.523 4.477 10 10 10 5.523 0 10-4.477 10-10 0-5.523-4.477-10-10-10zm3 15.5l-3-3-3 3v-9l3 3 3-3v9z"/>
+        </svg>
+        Bluesky
+      </a>
+    </li>
+  </ul>
+</aside>
 
-  <footer>
+<footer>
     &copy; 2025 Refugio Bizarro. Todos los derechos reservados.
   </footer>
 </body>
 </html>
+
