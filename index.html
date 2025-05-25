@@ -51,17 +51,26 @@
         box-shadow: 0 4px 10px rgba(100, 50, 200, 0.3);
       }
 
-      header img {
-        width: 100px;
-        height: auto;
-        filter: drop-shadow(0 0 6px #b478ffcc);
+      .header-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
       }
 
-      header h1 {
+      .header-content h1 {
         font-size: 3em;
         color: #d6b3ff;
-        margin-top: 20px;
         text-shadow: 0 0 10px #c87effcc, 0 0 20px #8b3accbb;
+        margin-top: 0;
+      }
+
+      .header-content img {
+        width: 80px;
+        height: auto;
+        filter: drop-shadow(0 0 6px #b478ffcc);
+        margin-top: 0;
       }
 
       nav {
@@ -168,8 +177,10 @@
   </head>
   <body>
     <header>
-      <img src="Petralogo.png" alt="Logo Refugio Bizarro" />
-      <h1>Refugio Bizarro</h1>
+      <div class="header-content">
+        <h1>Refugio Bizarro</h1>
+        <img src="Petralogo.png" alt="Logo Refugio Bizarro" />
+      </div>
     </header>
 
     <nav>
@@ -208,3 +219,4 @@
     </footer>
   </body>
 </html>
+
