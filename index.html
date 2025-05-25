@@ -12,180 +12,172 @@
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet" />
 
   <!-- Meta SEO -->
-  <meta name="description" content="Refugio Bizarro: colectivo weird enfocado en los Mitos de Cthulhu, el rol y la fantasía oscura." />
-  <meta name="keywords" content="Refugio Bizarro, Mitos de Cthulhu, horror cósmico, rol, eZine, Lovecraft, fantasía oscura" />
+  <meta
+    name="description"
+    content="Refugio Bizarro: colectivo weird enfocado en los Mitos de Cthulhu, el rol y la fantasía oscura."
+  />
+  <meta
+    name="keywords"
+    content="Refugio Bizarro, Mitos de Cthulhu, horror cósmico, rol, eZine, Lovecraft, fantasía oscura"
+  />
   <link rel="canonical" href="https://tu-usuario.github.io/refugio-bizarro/" />
 
-  <style>
-    /* Reset básico */
-    *, *::before, *::after {
-      box-sizing: border-box;
-    }
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Refugio Bizarro" />
+  <meta
+    property="og:description"
+    content="Colectivo weird con enfoque en Los Mitos de Cthulhu, el rol y la fantasía oscura, hogar de la eZine homónima."
+  />
+  <meta property="og:image" content="Petralogo.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://tu-usuario.github.io/refugio-bizarro/" />
 
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:title" content="Refugio Bizarro" />
+  <meta
+    name="twitter:description"
+    content="Colectivo weird con enfoque en Los Mitos de Cthulhu, el rol y la fantasía oscura, hogar de la eZine homónima."
+  />
+  <meta name="twitter:image" content="Petralogo.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <style>
     body {
-      margin: 0;
-      background: linear-gradient(135deg, #0d0a12, #1a1427);
-      color: #e0dfe3;
       font-family: 'EB Garamond', serif;
+      margin: 0;
+      padding: 0;
+      background: #121212;
+      color: #eee;
       line-height: 1.6;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
     }
 
     nav {
-      background: #1f1730;
-      border-bottom: 2px solid #6f42c1;
-      padding: 1rem 2rem;
+      background-color: #1e1e1e;
+      padding: 12px 20px;
       display: flex;
       justify-content: center;
-      gap: 3rem;
-      font-weight: 600;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-      font-size: 1.1rem;
-      box-shadow: 0 2px 10px rgba(111, 66, 193, 0.5);
-      position: sticky;
-      top: 0;
-      z-index: 100;
+      gap: 30px;
+      font-size: 1.1em;
+      border-bottom: 1px solid #444;
     }
 
     nav a {
-      color: #b9a9f0;
+      color: #aaa;
       text-decoration: none;
-      position: relative;
+      font-weight: 500;
       transition: color 0.3s ease;
     }
 
-    nav a::after {
-      content: "";
-      position: absolute;
-      width: 0;
-      height: 2px;
-      background: #9b72d8;
-      left: 0;
-      bottom: -6px;
-      transition: width 0.3s ease;
-      border-radius: 1px;
-    }
-
-    nav a:hover,
-    nav a:focus {
-      color: #d3c6ff;
-    }
-
-    nav a:hover::after,
-    nav a:focus::after {
-      width: 100%;
+    nav a:hover {
+      color: #8e44ad;
     }
 
     header {
       text-align: center;
-      padding: 4rem 1rem 2rem;
-      border-bottom: 1px solid #3a2e57;
-      box-shadow: 0 4px 10px rgba(59, 46, 87, 0.4);
-      background: rgba(25, 18, 43, 0.6);
-      backdrop-filter: blur(5px);
-    }
-
-    .logo-title img {
-      width: 100px;
-      height: auto;
-      margin-bottom: 1rem;
-      filter: drop-shadow(0 0 4px #7f6bc9);
-      transition: filter 0.3s ease;
-    }
-
-    .logo-title img:hover {
-      filter: drop-shadow(0 0 10px #a789ff);
+      margin: 40px 0 20px;
     }
 
     .logo-title h1 {
-      font-size: 3.2rem;
-      color: #b99cff;
-      letter-spacing: 0.2em;
+      font-size: 2.8em;
+      color: #8e44ad;
+      letter-spacing: 1.5px;
       margin: 0;
-      text-shadow:
-        0 0 5px #a57fef,
-        0 0 10px #9b72d8,
-        0 0 20px #6f42c1;
+      font-weight: 600;
     }
 
-    main {
+    .logo-title img {
+      width: 80px;
+      height: auto;
+      filter: none;
+      margin-bottom: 10px;
+    }
+
+    .main-content {
       max-width: 900px;
-      margin: 3rem auto 4rem;
-      padding: 0 1rem;
-      background: #241f3f;
-      border-radius: 15px;
-      box-shadow:
-        0 0 10px rgba(111, 66, 193, 0.4),
-        inset 0 0 30px rgba(111, 66, 193, 0.2);
+      margin: 40px auto;
+      padding: 0 20px;
+      display: flex;
+      gap: 40px;
     }
 
-    .info-box {
-      padding: 2rem 3rem;
+    .left-column {
+      flex: 2;
+      background: #1f1f1f;
+      border-radius: 10px;
+      padding: 25px 30px;
+      box-shadow: 0 0 8px rgba(142, 68, 173, 0.3);
     }
 
     .info-box p {
-      font-size: 1.15rem;
-      margin-bottom: 1.8rem;
-      color: #d1c7fa;
-      text-shadow: 0 0 3px rgba(50, 41, 88, 0.8);
+      color: #ddd;
+      font-size: 1.1em;
+      margin-bottom: 1.2em;
+      font-style: normal;
     }
 
-    a {
-      color: #bb99ff;
+    .right-column {
+      flex: 1;
+      background: #1f1f1f;
+      border-radius: 10px;
+      padding: 25px 20px;
+      box-shadow: 0 0 8px rgba(142, 68, 173, 0.3);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .right-column h2 {
+      color: #8e44ad;
+      margin-bottom: 20px;
       font-weight: 600;
-      text-decoration: underline;
-      transition: color 0.3s ease;
+      letter-spacing: 1.1px;
     }
 
-    a:hover,
-    a:focus {
-      color: #e5d7ff;
+    .social-links {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+    }
+
+    .social-links li {
+      margin-bottom: 20px;
+    }
+
+    .social-links a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: #ddd;
+      font-weight: 600;
+      transition: color 0.3s ease;
+      font-size: 1.1em;
+      gap: 12px;
+    }
+
+    .social-links a:hover {
+      color: #c39bd3;
+    }
+
+    .social-icon {
+      width: 24px;
+      height: 24px;
+      fill: currentColor;
+      flex-shrink: 0;
     }
 
     footer {
+      margin-top: 60px;
+      padding: 20px;
       text-align: center;
-      padding: 2rem 1rem;
+      color: #8e44ad;
       font-weight: 600;
-      letter-spacing: 0.1em;
-      color: #a488ff;
-      border-top: 1px solid #3a2e57;
-      background: #1f1730;
-      box-shadow: inset 0 10px 20px -10px rgba(111, 66, 193, 0.5);
-      user-select: none;
-    }
-
-    @media (max-width: 600px) {
-      nav {
-        gap: 1.2rem;
-        font-size: 1rem;
-        padding: 1rem;
-      }
-
-      .logo-title h1 {
-        font-size: 2.2rem;
-        letter-spacing: 0.1em;
-      }
-
-      main {
-        margin: 2rem 1rem;
-        padding: 1rem;
-      }
-
-      .info-box {
-        padding: 1.5rem 1.5rem;
-      }
-
-      .info-box p {
-        font-size: 1rem;
-      }
+      border-top: 1px solid #444;
     }
   </style>
 </head>
 <body>
-
+  <!-- Barra de navegación -->
   <nav>
     <a href="index.html">Sobre nosotros</a>
     <a href="nuestrosproyectos.html">Nuestros proyectos</a>
@@ -200,34 +192,70 @@
     </div>
   </header>
 
-  <main>
-    <div class="info-box">
-      <p>
-        Somos un refugio. Pero no un refugio cualquiera, sino uno "Bizarro",
-        porque nuestra identidad es lo "weird".
-      </p>
-      <p>
-        Entiéndase "Bizarro" en el sentido más amplio de la palabra: es el
-        anglicismo "bizarre", raro. Pero también, y como dice la RAE,
-        "valiente, generoso, lúcido, espléndido". Y es que queremos tener la
-        valentía de apostar por esos escritores "raritos" que quedan fuera de
-        los círculos tradicionales.
-      </p>
-      <p>
-        Nuestro colectivo está enraizado en la Wiki Lovecraft hispana, desde
-        la que surgió el año 2024 como iniciativa de los administradores
-        Ricardo Meyer y Yuke Kabula. Son varios los autores que colaboran con
-        nosotros... ¡y tú podrías ser uno de ellos!
-      </p>
+  <div class="main-content">
+    <div class="left-column">
+      <div class="info-box">
+        <p>
+          Somos un refugio. Pero no un refugio cualquiera, sino uno "Bizarro",
+          porque nuestra identidad es lo "weird".
+        </p>
+        <p>
+          Entiéndase "Bizarro" en el sentido más amplio de la palabra: es el
+          anglicismo "bizarre", raro. Pero también, y como dice la RAE,
+          "valiente, generoso, lúcido, espléndido". Y es que queremos tener la
+          valentía de apostar por esos escritores "raritos" que quedan fuera de
+          los círculos tradicionales.
+        </p>
+        <p>
+          Nuestro colectivo está enraizado en la Wiki Lovecraft hispana, desde
+          la que surgió el año 2024 como iniciativa de los administradores
+          Ricardo Meyer y Yuke Kabula. Son varios los autores que colaboran con
+          nosotros... ¡y tú podrías ser uno de ellos!
+        </p>
+      </div>
     </div>
-  </main>
+
+    <aside class="right-column">
+      <h2>Síguenos</h2>
+      <ul class="social-links">
+        <li>
+          <a href="https://www.instagram.com/refugiobizarro" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M7.75 2A5.75 5.75 0 002 7.75v8.5A5.75 5.75 0 007.75 22h8.5A5.75 5.75 0 0022 16.25v-8.5A5.75 5.75 0 0016.25 2h-8.5zM12 7.25a4.75 4.75 0 110 9.5 4.75 4.75 0 010-9.5zm5.5-1.5a1.25 1.25 0 11-2.5 0 1.25 1.25 0 012.5 0zM12 9.75a2.25 2.25 0 100 4.5 2.25 2.25 0 000-4.5z"/>
+            </svg>
+            Instagram
+          </a>
+        </li>
+        <li>
+          <a href="https://www.threads.net/@refugiobizarro" target="_blank" rel="noopener noreferrer" aria-label="Threads">
+            <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M12 2C6.477 2 2 6.477 2 12c0 5.523 4.477 10 10 10s10-4.477 10-10c0-5.522-4.477-10-10-10zm.75 14.75v-3.5h1.5v3.5h-1.5zm-.75-5v-3h1.5v3h-1.5z"/>
+            </svg>
+            Threads
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/refugiobizarro" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+            <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M23 3a10.9 10.9 0 01-3.14.86 5.48 5.48 0 002.4-3.02 10.86 10.86 0 01-3.46 1.32 5.44 5.44 0 00-9.3 4.96 15.44 15.44 0 01-11.22-5.7 5.44 5.44 0 001.68 7.27 5.41 5.41 0 01-2.47-.68v.07a5.44 5.44 0 004.36 5.33 5.49 5.49 0 01-2.45.09 5.45 5.45 0 005.07 3.78 10.92 10.92 0 01-6.75 2.33c-.44 0-.88-.03-1.31-.08a15.42 15.42 0 008.36 2.45c10.03 0 15.53-8.31 15.53-15.53 0-.24-.01-.48-.02-.72A11.1 11.1 0 0023 3z"/>
+            </svg>
+            Twitter
+          </a>
+        </li>
+        <li>
+          <a href="https://bsky.app/profile/refugiobizarro.bsky.social" target="_blank" rel="noopener noreferrer" aria-label="Bluesky">
+            <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M12 2C6.477 2 2 6.477 2 12c0 5.523 4.477 10 10 10 5.523 0 10-4.477 10-10 0-5.523-4.477-10-10-10zm3 15.5l-3-3-3 3v-9l3 3 3-3v9z"/>
+            </svg>
+            Bluesky
+          </a>
+        </li>
+      </ul>
+    </aside>
+  </div>
 
   <footer>
     &copy; 2025 Refugio Bizarro. Todos los derechos reservados.
   </footer>
-
 </body>
 </html>
-
-
-
