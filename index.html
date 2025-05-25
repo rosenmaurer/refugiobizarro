@@ -1,285 +1,210 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Refugio Bizarro</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Refugio Bizarro</title>
 
-  <!-- Favicon -->
-  <link rel="icon" href="Petralogo.png" type="image/png" />
+    <!-- Favicon -->
+    <link rel="icon" href="Petralogo.png" type="image/png" />
 
-  <!-- Fuente EB Garamond -->
-  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet" />
+    <!-- Fuente EB Garamond -->
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet" />
 
-  <!-- Meta SEO -->
-  <meta
-    name="description"
-    content="Refugio Bizarro: colectivo weird enfocado en los Mitos de Cthulhu, el rol y la fantasía oscura."
-  />
-  <meta
-    name="keywords"
-    content="Refugio Bizarro, Mitos de Cthulhu, horror cósmico, rol, eZine, Lovecraft, fantasía oscura"
-  />
-  <link rel="canonical" href="https://tu-usuario.github.io/refugio-bizarro/" />
+    <!-- Meta SEO -->
+    <meta name="description" content="Refugio Bizarro: colectivo weird enfocado en los Mitos de Cthulhu, el rol y la fantasía oscura." />
+    <meta name="keywords" content="Refugio Bizarro, Mitos de Cthulhu, horror cósmico, rol, eZine, Lovecraft, fantasía oscura" />
+    <link rel="canonical" href="https://tu-usuario.github.io/refugio-bizarro/" />
 
-  <!-- Open Graph Meta Tags -->
-  <meta property="og:title" content="Refugio Bizarro" />
-  <meta
-    property="og:description"
-    content="Colectivo weird con enfoque en Los Mitos de Cthulhu, el rol y la fantasía oscura, hogar de la eZine homónima."
-  />
-  <meta property="og:image" content="Petralogo.png" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://tu-usuario.github.io/refugio-bizarro/" />
+    <!-- Open Graph -->
+    <meta property="og:title" content="Refugio Bizarro" />
+    <meta property="og:description" content="Colectivo weird con enfoque en Los Mitos de Cthulhu, el rol y la fantasía oscura, hogar de la eZine homónima." />
+    <meta property="og:image" content="Petralogo.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://tu-usuario.github.io/refugio-bizarro/" />
 
-  <!-- Twitter Meta Tags -->
-  <meta name="twitter:title" content="Refugio Bizarro" />
-  <meta
-    name="twitter:description"
-    content="Colectivo weird con enfoque en Los Mitos de Cthulhu, el rol y la fantasía oscura, hogar de la eZine homónima."
-  />
-  <meta name="twitter:image" content="Petralogo.png" />
-  <meta name="twitter:card" content="summary_large_image" />
+    <!-- Twitter -->
+    <meta name="twitter:title" content="Refugio Bizarro" />
+    <meta name="twitter:description" content="Colectivo weird con enfoque en Los Mitos de Cthulhu, el rol y la fantasía oscura, hogar de la eZine homónima." />
+    <meta name="twitter:image" content="Petralogo.png" />
+    <meta name="twitter:card" content="summary_large_image" />
 
-  <style>
-    body {
-      font-family: 'EB Garamond', serif;
-      margin: 0;
-      padding: 0;
-      background: linear-gradient(135deg, #2e003e, #1b0026);
-      color: #eee;
-      line-height: 1.6;
-    }
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-    nav {
-      background-color: #3a0070;
-      padding: 15px 30px;
-      display: flex;
-      justify-content: center;
-      gap: 40px;
-      font-size: 1.15em;
-      border-bottom: 2px solid #5a2ca0;
-      box-shadow: 0 2px 8px rgba(90, 44, 160, 0.5);
-    }
+      body {
+        font-family: 'EB Garamond', serif;
+        background: #0e0018;
+        color: #eee;
+        line-height: 1.6;
+      }
 
-    nav a {
-      color: #d5b1ff;
-      text-decoration: none;
-      font-weight: 600;
-      letter-spacing: 0.04em;
-      transition: color 0.3s ease;
-      padding: 6px 12px;
-      border-radius: 8px;
-    }
+      header {
+        text-align: center;
+        padding: 60px 20px 30px;
+        background: #1c002a;
+        border-bottom: 2px solid #491580;
+        box-shadow: 0 4px 10px rgba(100, 50, 200, 0.3);
+      }
 
-    nav a:hover {
-      color: #fff;
-      background-color: #6e3ad1;
-      box-shadow: 0 0 10px #a66aff88;
-    }
+      header img {
+        width: 100px;
+        height: auto;
+        filter: drop-shadow(0 0 6px #b478ffcc);
+      }
 
-    header {
-      text-align: center;
-      margin: 50px 0 30px;
-      text-shadow: 0 0 8px #a46affbb;
-    }
+      header h1 {
+        font-size: 3em;
+        color: #d6b3ff;
+        margin-top: 20px;
+        text-shadow: 0 0 10px #c87effcc, 0 0 20px #8b3accbb;
+      }
 
-    .logo-title h1 {
-      font-size: 3.2em;
-      color: #d6b3ff;
-      letter-spacing: 2px;
-      margin: 0;
-      font-weight: 700;
-      text-shadow: 0 0 15px #c87effcc, 0 0 30px #8b3accbb;
-    }
+      nav {
+        background: #2a0048;
+        display: flex;
+        justify-content: center;
+        padding: 15px 0;
+        gap: 40px;
+        border-bottom: 2px solid #5a2ca0;
+      }
 
-    .logo-title img {
-      width: 90px;
-      height: auto;
-      filter: drop-shadow(0 0 4px #b478ffcc);
-      margin-bottom: 15px;
-    }
+      nav a {
+        color: #e0c6ff;
+        text-decoration: none;
+        font-size: 1.1em;
+        font-weight: 600;
+        padding: 8px 14px;
+        border-radius: 6px;
+        transition: 0.3s;
+      }
 
-    .main-content {
-      max-width: 900px;
-      margin: 40px auto 60px;
-      padding: 0 25px;
-      display: flex;
-      gap: 45px;
-    }
+      nav a:hover {
+        background-color: #5c2b91;
+        color: #fff;
+      }
 
-    .left-column {
-      flex: 2;
-      background: #280050;
-      border-radius: 14px;
-      padding: 30px 35px;
-      box-shadow: 0 0 25px #ac78ffaa;
-      border: 1.5px solid #6f46bd;
-    }
+      .container {
+        max-width: 1100px;
+        margin: 50px auto;
+        padding: 0 20px;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 40px;
+      }
 
-    .info-box p {
-      color: #ddccff;
-      font-size: 1.15em;
-      margin-bottom: 1.3em;
-      font-style: normal;
-      line-height: 1.75;
-      text-shadow: 0 0 5px #8c56ffcc;
-    }
+      .main {
+        background: #21003b;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 0 20px #a764ff44;
+        border: 1px solid #5a2ca0;
+      }
 
-    .right-column {
-      flex: 1;
-      background: #3a0070;
-      border-radius: 14px;
-      padding: 30px 25px;
-      box-shadow: 0 0 20px #bb88ffbb;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      border: 1.5px solid #7b50cf;
-    }
+      .main p {
+        font-size: 1.2em;
+        margin-bottom: 1.5em;
+        color: #e7d3ff;
+      }
 
-    .right-column h2 {
-      color: #d6b3ff;
-      margin-bottom: 28px;
-      font-weight: 700;
-      letter-spacing: 1.3px;
-      text-shadow: 0 0 12px #a475ffcc;
-      font-size: 1.8em;
-    }
+      aside {
+        background: #311057;
+        padding: 30px;
+        border-radius: 12px;
+        border: 1px solid #7646be;
+        box-shadow: 0 0 15px #bb88ff55;
+      }
 
-    .social-links {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      width: 100%;
-    }
+      aside h2 {
+        font-size: 1.5em;
+        color: #d6b3ff;
+        margin-bottom: 20px;
+        text-align: center;
+      }
 
-    .social-links li {
-      margin-bottom: 25px;
-    }
+      .social-links {
+        list-style: none;
+        padding: 0;
+      }
 
-    .social-links a {
-      display: flex;
-      align-items: center;
-      text-decoration: none;
-      color: #e6d9ff;
-      font-weight: 700;
-      transition: color 0.3s ease;
-      font-size: 1.15em;
-      gap: 14px;
-      border-radius: 8px;
-      padding: 8px 12px;
-      box-shadow: 0 0 12px #ac78ff77;
-      background: linear-gradient(135deg, #5f00a0, #8e44ad);
-      user-select: none;
-    }
+      .social-links li {
+        margin-bottom: 20px;
+      }
 
-    .social-links a:hover {
-      color: #fff;
-      box-shadow: 0 0 20px #c49affcc;
-      background: linear-gradient(135deg, #ac78ff, #b56ee0);
-    }
+      .social-links a {
+        display: block;
+        background: linear-gradient(135deg, #5f00a0, #8e44ad);
+        padding: 12px 16px;
+        border-radius: 8px;
+        color: #f6eaff;
+        font-weight: bold;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        box-shadow: 0 0 10px #ac78ff77;
+        text-align: center;
+      }
 
-    .social-icon {
-      width: 26px;
-      height: 26px;
-      fill: currentColor;
-      flex-shrink: 0;
-      filter: drop-shadow(0 0 2px #bb99ffcc);
-    }
+      .social-links a:hover {
+        background: linear-gradient(135deg, #ac78ff, #b56ee0);
+        color: white;
+        box-shadow: 0 0 20px #c49affcc;
+      }
 
-    footer {
-      margin-top: 70px;
-      padding: 22px;
-      text-align: center;
-      color: #cbb0ff;
-      font-weight: 700;
-      border-top: 2px solid #6f46bd;
-      text-shadow: 0 0 8px #ac78ffbb;
-      user-select: none;
-    }
-  </style>
-</head>
-<body>
-  <!-- Barra de navegación -->
-  <nav>
-    <a href="index.html">Sobre nosotros</a>
-    <a href="nuestrosproyectos.html">Nuestros proyectos</a>
-    <a href="revistarefugiobizarro.html">Números de la revista</a>
-    <a href="contactorefugiobizarro.html">Contacto</a>
-  </nav>
-
-  <header>
-    <div class="logo-title">
-      <img src="Petralogo.png" alt="Logo del colectivo Refugio Bizarro" />
+      footer {
+        text-align: center;
+        padding: 30px 20px;
+        background: #1c002a;
+        border-top: 2px solid #5a2ca0;
+        color: #cbb0ff;
+        font-weight: 700;
+        margin-top: 50px;
+        text-shadow: 0 0 8px #ac78ff99;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="Petralogo.png" alt="Logo Refugio Bizarro" />
       <h1>Refugio Bizarro</h1>
+    </header>
+
+    <nav>
+      <a href="index.html">Sobre nosotros</a>
+      <a href="nuestrosproyectos.html">Nuestros proyectos</a>
+      <a href="revistarefugiobizarro.html">Números de la revista</a>
+      <a href="contactorefugiobizarro.html">Contacto</a>
+    </nav>
+
+    <div class="container">
+      <section class="main">
+        <p>
+          Somos un refugio. Pero no un refugio cualquiera, sino uno "Bizarro", porque nuestra identidad es lo "weird".
+        </p>
+        <p>
+          Entiéndase "Bizarro" en el sentido más amplio de la palabra: es el anglicismo "bizarre", raro. Pero también, y como dice la RAE, "valiente, generoso, lúcido, espléndido".
+        </p>
+        <p>
+          Nuestro colectivo está enraizado en la Wiki Lovecraft hispana, desde la que surgimos en 2024 como iniciativa de los administradores Ricardo Meyer y Yuke Kabula. Son varios los autores que colaboran con nosotros... ¡y tú podrías ser uno de ellos!
+        </p>
+      </section>
+
+      <aside>
+        <h2>Síguenos</h2>
+        <ul class="social-links">
+          <li><a href="https://www.instagram.com/refugio.bizarro" target="_blank">Instagram</a></li>
+          <li><a href="https://www.threads.net/@refugio.bizarro" target="_blank">Threads</a></li>
+          <li><a href="https://twitter.com/refugiobizarro" target="_blank">Twitter</a></li>
+          <li><a href="https://bsky.app/profile/refugiobizarro.bsky.social" target="_blank">Bluesky</a></li>
+        </ul>
+      </aside>
     </div>
-  </header>
 
-  <div class="main-content">
-    <div class="left-column">
-      <div class="info-box">
-        <p>
-          Somos un refugio. Pero no un refugio cualquiera, sino uno "Bizarro",
-          porque nuestra identidad es lo "weird".
-        </p>
-        <p>
-          Entiéndase "Bizarro" en el sentido más amplio de la palabra: es el
-          anglicismo "bizarre", raro. Pero también, y como dice la RAE,
-          "valiente, generoso, lúcido, espléndido". Y es que queremos tener la
-          valentía de apostar por esos escritores "raritos" que quedan fuera de
-          los círculos tradicionales.
-        </p>
-        <p>
-          Nuestro colectivo está enraizado en la Wiki Lovecraft hispana, desde
-          la que surgió el año 2024 como iniciativa de los administradores
-          Ricardo Meyer y Yuke Kabula. Son varios los autores que colaboran con
-          nosotros... ¡y tú podrías ser uno de ellos!
-        </p>
-      </div>
-    </div>
-
-    <aside class="right-column">
-  <h2>Síguenos</h2>
-  <ul class="social-links">
-    <li>
-      <a href="https://www.instagram.com/refugio.bizarro" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-        <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-          <path d="M7.75 2A5.75 5.75 0 002 7.75v8.5A5.75 5.75 0 007.75 22h8.5A5.75 5.75 0 0022 16.25v-8.5A5.75 5.75 0 0016.25 2h-8.5zM12 7.25a4.75 4.75 0 110 9.5 4.75 4.75 0 010-9.5zm5.5-1.5a1.25 1.25 0 11-2.5 0 1.25 1.25 0 012.5 0zM12 9.75a2.25 2.25 0 100 4.5 2.25 2.25 0 000-4.5z"/>
-        </svg>
-        Instagram
-      </a>
-    </li>
-    <li>
-      <a href="https://www.threads.net/@refugio.bizarro" target="_blank" rel="noopener noreferrer" aria-label="Threads">
-        <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-          <path d="M12 2C6.477 2 2 6.477 2 12c0 5.523 4.477 10 10 10s10-4.477 10-10c0-5.522-4.477-10-10-10zm.75 14.75v-3.5h1.5v3.5h-1.5zm-.75-5v-3h1.5v3h-1.5z"/>
-        </svg>
-        Threads
-      </a>
-    </li>
-    <li>
-      <a href="https://twitter.com/refugiobizarro" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-        <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-          <path d="M23 3a10.9 10.9 0 01-3.14.86 5.48 5.48 0 002.4-3.02 10.86 10.86 0 01-3.46 1.32 5.44 5.44 0 00-9.3 4.96 15.44 15.44 0 01-11.22-5.7 5.44 5.44 0 001.68 7.27 5.41 5.41 0 01-2.47-.68v.07a5.44 5.44 0 004.36 5.33 5.49 5.49 0 01-2.45.09 5.45 5.45 0 005.07 3.78 10.92 10.92 0 01-6.75 2.33c-.44 0-.88-.03-1.31-.08a15.42 15.42 0 008.36 2.45c10.03 0 15.53-8.31 15.53-15.53 0-.24-.01-.48-.02-.72A11.1 11.1 0 0023 3z"/>
-        </svg>
-        Twitter
-      </a>
-    </li>
-    <li>
-      <a href="https://bsky.app/profile/refugiobizarro.bsky.social" target="_blank" rel="noopener noreferrer" aria-label="Bluesky">
-        <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-          <path d="M12 2C6.477 2 2 6.477 2 12c0 5.523 4.477 10 10 10 5.523 0 10-4.477 10-10 0-5.523-4.477-10-10-10zm3 15.5l-3-3-3 3v-9l3 3 3-3v9z"/>
-        </svg>
-        Bluesky
-      </a>
-    </li>
-  </ul>
-</aside>
-
-<footer>
-    &copy; 2025 Refugio Bizarro. Todos los derechos reservados.
-  </footer>
-</body>
+    <footer>
+      &copy; 2025 Refugio Bizarro. Todos los derechos reservados.
+    </footer>
+  </body>
 </html>
-
