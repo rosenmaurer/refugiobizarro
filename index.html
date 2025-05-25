@@ -1,33 +1,45 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Refugio Bizarro</title>
 
   <!-- Favicon -->
-  <link rel="icon" href="Petralogo.png" type="image/png">
+  <link rel="icon" href="Petralogo.png" type="image/png" />
 
   <!-- Fuente EB Garamond -->
-  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet" />
 
   <!-- Meta SEO -->
-  <meta name="description" content="Refugio Bizarro: colectivo weird enfocado en los Mitos de Cthulhu, el rol y la fantasía oscura.">
-  <meta name="keywords" content="Refugio Bizarro, Mitos de Cthulhu, horror cósmico, rol, eZine, Lovecraft, fantasía oscura">
-  <link rel="canonical" href="https://tu-usuario.github.io/refugio-bizarro/">
+  <meta
+    name="description"
+    content="Refugio Bizarro: colectivo weird enfocado en los Mitos de Cthulhu, el rol y la fantasía oscura."
+  />
+  <meta
+    name="keywords"
+    content="Refugio Bizarro, Mitos de Cthulhu, horror cósmico, rol, eZine, Lovecraft, fantasía oscura"
+  />
+  <link rel="canonical" href="https://tu-usuario.github.io/refugio-bizarro/" />
 
   <!-- Open Graph Meta Tags -->
-  <meta property="og:title" content="Refugio Bizarro">
-  <meta property="og:description" content="Colectivo weird con enfoque en Los Mitos de Cthulhu, el rol y la fantasía oscura, hogar de la eZine homónima.">
-  <meta property="og:image" content="Petralogo.png">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://tu-usuario.github.io/refugio-bizarro/">
+  <meta property="og:title" content="Refugio Bizarro" />
+  <meta
+    property="og:description"
+    content="Colectivo weird con enfoque en Los Mitos de Cthulhu, el rol y la fantasía oscura, hogar de la eZine homónima."
+  />
+  <meta property="og:image" content="Petralogo.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://tu-usuario.github.io/refugio-bizarro/" />
 
   <!-- Twitter Meta Tags -->
-  <meta name="twitter:title" content="Refugio Bizarro">
-  <meta name="twitter:description" content="Colectivo weird con enfoque en Los Mitos de Cthulhu, el rol y la fantasía oscura, hogar de la eZine homónima.">
-  <meta name="twitter:image" content="Petralogo.png">
-  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Refugio Bizarro" />
+  <meta
+    name="twitter:description"
+    content="Colectivo weird con enfoque en Los Mitos de Cthulhu, el rol y la fantasía oscura, hogar de la eZine homónima."
+  />
+  <meta name="twitter:image" content="Petralogo.png" />
+  <meta name="twitter:card" content="summary_large_image" />
 
   <style>
     body {
@@ -91,7 +103,8 @@
       gap: 40px;
     }
 
-    .projects, .social-links {
+    .projects,
+    .social-links {
       width: 100%;
       padding: 20px;
       border: 5px double #8e44ad;
@@ -128,31 +141,58 @@
     center img {
       margin-top: 20px;
     }
+
     .logo-title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
 
-.logo-title img {
-  width: 100px;
-  height: auto;
-}
+    .logo-title img {
+      width: 100px;
+      height: auto;
+    }
 
-.logo-title h1 {
-  font-size: 3em;
-  letter-spacing: 2px;
-  color: #8e44ad;
-  text-shadow: 0 0 10px rgba(142, 68, 173, 0.7);
-  text-transform: uppercase;
-  margin: 0;
-}
+    .logo-title h1 {
+      font-size: 3em;
+      letter-spacing: 2px;
+      color: #8e44ad;
+      text-shadow: 0 0 10px rgba(142, 68, 173, 0.7);
+      text-transform: uppercase;
+      margin: 0;
+    }
+
+    /* NUEVOS ESTILOS PARA DIVIDIR BODY EN DOS COLUMNAS */
+
+    .main-content {
+      display: flex;
+      max-width: 1200px;
+      margin: 40px auto;
+      gap: 40px;
+      padding: 0 20px;
+    }
+
+    .left-column,
+    .right-column {
+      flex: 1;
+    }
+
+    .info-box {
+      background: #1e0a36;
+      border: 2px solid #8e44ad;
+      box-shadow: 0 0 15px #8e44ad88;
+      border-radius: 15px;
+      padding: 30px;
+      color: #dcd6f7;
+      font-size: 1.1em;
+      line-height: 1.5;
+      font-style: italic;
+    }
   </style>
 </head>
 <body>
-
   <!-- Barra de navegación -->
   <nav>
     <a href="index.html">Sobre nosotros</a>
@@ -162,11 +202,41 @@
   </nav>
 
   <header>
-  <div class="logo-title">
-    <img src="Petralogo.png" alt="Logo del colectivo Refugio Bizarro">
-    <h1>Refugio Bizarro</h1>
-  </div>
+    <div class="logo-title">
+      <img src="Petralogo.png" alt="Logo del colectivo Refugio Bizarro" />
+      <h1>Refugio Bizarro</h1>
+    </div>
+  </header>
 
+  <div class="main-content">
+    <div class="left-column">
+      <div class="info-box">
+        <p>
+          Somos un refugio. Pero no un refugio cualquiera, sino uno "Bizarro",
+          porque nuestra identidad es lo "weird".
+        </p>
+        <p>
+          Entiéndase "Bizarro" en el sentido más amplio de la palabra: es el
+          anglicismo "bizarre", raro. Pero también, y como dice la RAE,
+          "valiente, generoso, lúcido, espléndido". Y es que queremos tener la
+          valentía de apostar por esos escritores "raritos" que quedan fuera de
+          los círculos tradicionales.
+        </p>
+        <p>
+          Nuestro colectivo está enraizado en la Wiki Lovecraft hispana, desde
+          la que surgió el año 2024 como iniciativa de los administradores
+          Ricardo Meyer y Yuke Kabula. Son varios los autores que colaboran con
+          nosotros... ¡y tú podrías ser uno de ellos!
+        </p>
+      </div>
+    </div>
+
+    <div class="right-column">
+      <!-- Aquí puedes agregar contenido para la columna derecha -->
+    </div>
+  </div>
 </body>
+</html>
+
 </html>
 
