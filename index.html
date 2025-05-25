@@ -42,43 +42,34 @@
   <meta name="twitter:card" content="summary_large_image" />
 
   <style>
-    body {
+ body {
   font-family: 'EB Garamond', serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(135deg, #0d0d0d 0%, #1a0f2a 50%, #8e44ad 100%);
-  color: #ffffff;
+  background: #121212; /* Fondo oscuro pero liso */
+  color: #eee;
   line-height: 1.6;
 }
 
 nav {
-  background-color: #111;
-  border-bottom: 2px solid #8e44ad;
-  padding: 10px 20px;
+  background-color: #1e1e1e;
+  padding: 12px 20px;
   display: flex;
   justify-content: center;
-  gap: 40px;
+  gap: 30px;
   font-size: 1.1em;
-  text-shadow:
-    0 0 5px #8e44ad,
-    0 0 10px #8e44ad,
-    0 0 20px #b085d3;
-  transition: background-color 0.3s ease;
+  border-bottom: 1px solid #444;
 }
 
 nav a {
-  color: #8e44ad;
+  color: #aaa;
   text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s ease, text-shadow 0.3s ease;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
 nav a:hover {
-  color: #c39bd3;
-  text-shadow:
-    0 0 10px #c39bd3,
-    0 0 20px #c39bd3,
-    0 0 30px #d7bfff;
+  color: #8e44ad;
 }
 
 header {
@@ -87,125 +78,48 @@ header {
 }
 
 .logo-title h1 {
-  font-size: 3em;
-  letter-spacing: 2px;
-  color: #5e3a70; /* violeta oscuro menos brillante */
-  text-shadow:
-    0 0 5px rgba(94, 58, 112, 0.5),
-    0 0 10px rgba(94, 58, 112, 0.5);
-  text-transform: uppercase;
+  font-size: 2.8em;
+  color: #8e44ad;
+  letter-spacing: 1.5px;
   margin: 0;
-  animation: none; /* sin brillo animado */
+  font-weight: 600;
 }
-
 
 .logo-title img {
-  width: 100px;
+  width: 80px;
   height: auto;
-  filter: drop-shadow(0 0 6px #8e44ad);
-  transition: filter 0.3s ease;
-}
-
-.logo-title img:hover {
-  filter: drop-shadow(0 0 14px #c39bd3);
-}
-
-.logo-title h1 {
-  font-size: 3em;
-  letter-spacing: 2px;
-  color: #8e44ad;
-  text-shadow:
-    0 0 10px rgba(142, 68, 173, 0.7),
-    0 0 20px rgba(195, 155, 211, 0.8);
-  text-transform: uppercase;
-  margin: 0;
-  animation: glow 3s ease-in-out infinite alternate;
-}
-
-@keyframes glow {
-  0% {
-    text-shadow:
-      0 0 10px rgba(142, 68, 173, 0.7),
-      0 0 20px rgba(195, 155, 211, 0.8);
-    color: #8e44ad;
-  }
-  100% {
-    text-shadow:
-      0 0 20px #c39bd3,
-      0 0 40px #d7bfff,
-      0 0 60px #d7bfff;
-    color: #c39bd3;
-  }
+  filter: none;
+  margin-bottom: 10px;
 }
 
 .main-content {
-  display: flex;
-  max-width: 1200px;
+  max-width: 900px;
   margin: 40px auto;
-  gap: 40px;
   padding: 0 20px;
 }
 
-.left-column,
-.right-column {
-  flex: 1;
-}
-
 .left-column {
-  background:
-    repeating-radial-gradient(circle at 20% 20%, rgba(142, 68, 173, 0.15), rgba(142, 68, 173, 0.15) 2px, transparent 3px, transparent 6px),
-    repeating-linear-gradient(45deg, rgba(142, 68, 173, 0.05), rgba(142, 68, 173, 0.05) 10px, transparent 10px, transparent 20px);
-  border-radius: 15px;
-  padding: 15px;
+  background: #1f1f1f;
+  border-radius: 10px;
+  padding: 25px 30px;
+  box-shadow: 0 0 8px rgba(142, 68, 173, 0.3);
 }
 
-.info-box {
-  background: #1e0a36;
-  border: 2px solid #8e44ad;
-  box-shadow:
-    0 0 15px #8e44ad88,
-    inset 0 0 8px #8e44ad55;
-  border-radius: 15px;
-  padding: 30px;
-  color: #dcd6f7;
+.info-box p {
+  color: #ddd;
   font-size: 1.1em;
-  line-height: 1.5;
-  font-style: italic;
-  transition: box-shadow 0.3s ease;
-}
-
-.info-box:hover {
-  box-shadow:
-    0 0 25px #c39bd3dd,
-    inset 0 0 15px #c39bd3bb;
-}
-
-.right-column img.ghisguth-img {
-  width: 70%; /* tamaño más pequeño */
-  max-width: 300px; /* para que no se haga muy grande en pantallas grandes */
-  margin: 0 auto;
-  display: block;
-}
-
-.right-column img:hover {
-  filter: brightness(1.1) saturate(1.3) drop-shadow(0 0 12px #c39bd3);
-  box-shadow:
-    0 0 30px #c39bd3,
-    0 0 50px #d7bfff;
+  margin-bottom: 1.2em;
+  font-style: normal;
 }
 
 a {
-  color: darkgreen;
+  color: #6a3f90;
+  font-weight: 600;
   text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
 a:hover {
-  text-shadow:
-    0 0 5px #8e44ad,
-    0 0 10px #b085d3;
-  color: #c39bd3;
+  color: #b583d0;
 }
 
 footer {
@@ -213,11 +127,10 @@ footer {
   padding: 20px;
   text-align: center;
   color: #8e44ad;
-  font-weight: bold;
-  text-shadow:
-    0 0 5px #8e44ad,
-    0 0 10px #b085d3;
+  font-weight: 600;
+  border-top: 1px solid #444;
 }
+
   </style>
 </head>
 <body>
@@ -236,34 +149,27 @@ footer {
     </div>
   </header>
 
-  <div class="main-content">
-    <div class="left-column">
-      <div class="info-box">
-        <p>
-          Somos un refugio. Pero no un refugio cualquiera, sino uno "Bizarro",
-          porque nuestra identidad es lo "weird".
-        </p>
-        <p>
-          Entiéndase "Bizarro" en el sentido más amplio de la palabra: es el
-          anglicismo "bizarre", raro. Pero también, y como dice la RAE,
-          "valiente, generoso, lúcido, espléndido". Y es que queremos tener la
-          valentía de apostar por esos escritores "raritos" que quedan fuera de
-          los círculos tradicionales.
-        </p>
-        <p>
-          Nuestro colectivo está enraizado en la Wiki Lovecraft hispana, desde
-          la que surgió el año 2024 como iniciativa de los administradores
-          Ricardo Meyer y Yuke Kabula. Son varios los autores que colaboran con
-          nosotros... ¡y tú podrías ser uno de ellos!
-        </p>
-      </div>
-    </div>
-
-    <div class="right-column">
-      <img src="Ghisguth.png" alt="Ilustración de Ghisguth" class="ghisguth-img" />
-    </div>
+  <div class="info-box">
+    <p>
+      Somos un refugio. Pero no un refugio cualquiera, sino uno "Bizarro",
+      porque nuestra identidad es lo "weird".
+    </p>
+    <p>
+      Entiéndase "Bizarro" en el sentido más amplio de la palabra: es el
+      anglicismo "bizarre", raro. Pero también, y como dice la RAE,
+      "valiente, generoso, lúcido, espléndido". Y es que queremos tener la
+      valentía de apostar por esos escritores "raritos" que quedan fuera de
+      los círculos tradicionales.
+    </p>
+    <p>
+      Nuestro colectivo está enraizado en la Wiki Lovecraft hispana, desde
+      la que surgió el año 2024 como iniciativa de los administradores
+      Ricardo Meyer y Yuke Kabula. Son varios los autores que colaboran con
+      nosotros... ¡y tú podrías ser uno de ellos!
+    </p>
   </div>
 </body>
 </html>
+
 
 
