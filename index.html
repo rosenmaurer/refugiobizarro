@@ -32,21 +32,37 @@
   <style>
     body {
       font-family: 'EB Garamond', serif;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
       margin: 0;
-      padding: 40px;
-      line-height: 1.6;
+      padding: 0;
       background-color: #000000;
       color: #ffffff;
+      line-height: 1.6;
+    }
+
+    nav {
+      background-color: #111;
+      border-bottom: 2px solid #8e44ad;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      font-size: 1.1em;
+    }
+
+    nav a {
+      color: #8e44ad;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-shadow: 0 0 5px #8e44ad;
+      color: #c39bd3;
     }
 
     header {
       text-align: center;
-      margin-bottom: 20px;
+      margin: 40px 0 20px;
     }
 
     header img {
@@ -67,10 +83,11 @@
 
     .container {
       display: flex;
-      width: 100%;
-      max-width: 1200px;
       flex-direction: column;
       align-items: center;
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
       gap: 40px;
     }
 
@@ -107,9 +124,21 @@
       text-shadow: 0 0 5px #8e44ad;
       color: #c39bd3;
     }
+
+    center img {
+      margin-top: 20px;
+    }
   </style>
 </head>
 <body>
+
+  <!-- Barra de navegación -->
+  <nav>
+    <a href="index.html">Sobre nosotros</a>
+    <a href="nuestrosproyectos.html">Nuestros proyectos</a>
+    <a href="revistarefugiobizarro.html">Números de la revista</a>
+    <a href="contactorefugiobizarro.html">Contacto</a>
+  </nav>
 
   <header>
     <img src="Petralogo.png" alt="Logo del colectivo Refugio Bizarro">
@@ -155,6 +184,7 @@
       <p><a href="Refugio_Bizarro_2.pdf" download>Descargar Refugio Bizarro #2</a></p>
     </div>
   </div>
-  
+
 </body>
 </html>
+
